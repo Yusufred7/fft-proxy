@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FFT Proxy</title>
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #10131c;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 25px;
+}
+
+main {
+  max-width: 440px;
+  margin: 55px auto;
+  background: #1b2030;
+  padding: 25px;
+  border-radius: 18px;
+}
+
+h1 { color: #69a8ff; }
+p { color: #aab4c8; }
+
+input {
+  width: 100%;
+  padding: 14px;
+  margin: 8px 0 16px;
+  border: 1px solid #414b62;
+  border-radius: 9px;
+  background: #10131c;
+  color: white;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background: #397cf6;
+  border: 0;
+  border-radius: 9px;
+  color: white;
+  font-weight: bold;
+}
+
+.status {
+  margin: 20px 0;
+  padding: 15px;
+  background: #10131c;
+  border-radius: 10px;
+}
+
+small { color: #8290a8; }
+</style>
+</head>
+<body>
+
+<main>
+  <h1>⚡ FFT Proxy</h1>
+  <p>Minecraft Bedrock Network Proxy</p>
+
+  <label>Sunucu IP adresi</label>
+  <input placeholder="Sunucu adresi">
+
+  <label>Sunucu portu</label>
+  <input type="number" placeholder="19132">
+
+  <div class="status">
+    <b>● Sistem durumu</b>
+    <p>Altyapı hazırlanıyor...</p>
+    <small>Henüz aktif bağlantı yok.</small>
+  </div>
+
+  <button disabled>
+    Proxy yakında aktif olacak
+  </button>
+</main>
+
+</body>
+</html>
